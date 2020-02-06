@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="file/bootstrap.min.css" />
+    <link
+      rel="manifest"
+      href="file/manifest.json"
+      crossorigin="use-credentials"
+    />
+    <meta name="atheme_color" content="#fff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="apple-mobile-web-app-title" content="神魔資訊網">
+    <link rel="apple-touch-icon" href="https://cdn.glitch.com/514798f5-1354-4db7-abc9-6d6ebef3f69c%2Fbrand.png?v=1580732619329" sizes="324x324">
+    <link rel="apple-touch-icon" href="https://cdn.glitch.com/514798f5-1354-4db7-abc9-6d6ebef3f69c%2Fbrand512.png?v=1580804279734" sizes="512x512">
+    <title>神魔資訊網</title>
+    
+    <style>
+      .ldark{background-color: #e2e3e5;}
+      .lsuccess{background-color: #d4edda;}
+      .lwarning{background-color: #ffe5c2;}
+      .ldanger{background-color: #fff3cd;}
+    </style>
+  </head>
+  <body style="background-color:##f0f8ff80; font-family:Microsoft JhengHei;">
+    <!-- As a heading -->
+    <nav class="navbar navbar-light sticky-top" style="background-color: #e3f2fd;">
+      <a class="navbar-brand font-weight-bold" href="#">
+        <img src="https://cdn.glitch.com/514798f5-1354-4db7-abc9-6d6ebef3f69c%2Fbrand.png?v=1580732619329" width="30" height="30" alt="">
+        神魔資訊網
+      </a>
+      <form class="form-inline">
+        <a class="navbar-toggler" href="#" role="button" onclick="tog()" id="menu"> <span class="navbar-toggler-icon"></span></a>
+      </form>
+    </nav>
+    <!--<nav class="navbar fixed-bottom navbar-light bg-light">
+      <span class="navbar-text">
+      <div class="d-flex flex-row">
+        <span class="badge badge-dark">未開放/已結束</span>&nbsp;
+        <span class="badge badge-success">進行中</span>&nbsp;
+        <span class="badge badge-warning">剩餘1天</span>&nbsp;
+        <span class="badge badge-danger">剩餘2小時</span>
+      </div>
+      </span>
+    </nav>-->
+    <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 1px;">
+      <div class="container">
+        <br />
+        <h3>最新資訊</h3>
+        <div class="accordion" id="accordion2">
+            <div class="card">
+              <div class="card-header" data-toggle="collapse" data-target="#ncollapse1" aria-expanded="false" aria-controls="collaps1">
+                <div class="media position-relative clearfix">
+                  <img src="https://cdn.glitch.com/514798f5-1354-4db7-abc9-6d6ebef3f69c%2Finfo-square-fill.svg?v=1580966688848" width="50px" class="rounded" alt="..." id="news1cover">
+                  &nbsp;&nbsp;
+                  <div class="media-body">
+                    <h5 class="mt-0" id="news1name">Loading...</h5>
+                    <span class="badge badge-light float-right" id="newstimelog"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+          
+        <br>
+        <h3>活動關卡</h3>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collaps1">
+                <div class="media position-relative clearfix">
+                  <img src="https://vignette.wikia.nocookie.net/tos/images/8/83/000i.png/revision/latest/scale-to-width-down/100?cb=20130711032522&path-prefix=zh" width="50px" class="rounded" alt="..." id="event1cover">
+                  &nbsp;&nbsp;
+                  <div class="media-body">
+                    <h5 class="mt-0" id="event1name">載入中...</h5>
+                    <span class="badge badge-light float-right" id="event1timelog"></span>
+                  </div>
+                </div>
+              </div>
+              <div id="collapse1" class="collapse" data-parent="#accordionExample">
+                <div class="card-body" id="event1body">
+                Now Loading...
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collaps1">
+                <div class="media position-relative clearfix">
+                    <img src="https://vignette.wikia.nocookie.net/tos/images/8/83/000i.png/revision/latest/scale-to-width-down/100?cb=20130711032522&path-prefix=zh" width="50px" class="rounded" alt="..." id="event2cover">
+                  &nbsp;&nbsp;
+                  <div class="media-body">
+                    <h5 class="mt-0" id="event2name">載入中...</h5>
+                    <span class="badge badge-light float-right" id="event2timelog"></span>
+                  </div>
+                </div>
+              </div>
+              <div id="collapse2" class="collapse" data-parent="#accordionExample">
+                <div class="card-body" id="event2body">
+                Now Loading...
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collaps1">
+                <div class="media position-relative clearfix">
+                    <img src="https://vignette.wikia.nocookie.net/tos/images/8/83/000i.png/revision/latest/scale-to-width-down/100?cb=20130711032522&path-prefix=zh" width="50px" class="rounded" alt="..." id="event3cover">
+                  &nbsp;&nbsp;
+                  <div class="media-body">
+                    <h5 class="mt-0" id="event3name">載入中...</h5>
+                    <span class="badge badge-light float-right" id="event3timelog"></span>
+                  </div>
+                </div>
+              </div>
+              <div id="collapse3" class="collapse" data-parent="#accordionExample">
+                <div class="card-body" id="event3body">
+                Now Loading...
+                </div>
+              </div>
+            </div>
+        </div>
+        <br />
+          
+      </div>
+      <div class="toast" style="position: absolute; top: 0; right: 0;width:300px;" id="toast" data-autohide="false">
+        <div class="toast-body" id="toast-body" style="">
+          Loading.....
+        </div>
+      </div>
+    </div>
+    
+    <br />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="file/jquery-3.4.1.min.js"></script>
+    <script src="file/popper.min.js"></script>
+    <script src="file/bootstrap.min.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/sw.js")
+          .then(reg => {
+            console.log("[Service Worker] Service Worker registered!");
+            console.log("[Service Worker] scope:", reg.scope);
+            console.log("[Service Worker] scriptURL:", reg.active.scriptURL);
+            console.log("[Service Worker] state:", reg.active.state);
+          })
+          .catch(err => console.log("Error!", err));
+      }
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
